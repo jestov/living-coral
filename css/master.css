@@ -9,7 +9,7 @@ html { font-family: 'Inter UI', sans-serif; }
 }
 body,html{
     width: 100%;
-    background: url('../img/3.jpg') center right;
+    background: url('../img/bg.jpeg') center right;
     background-size: cover;
     position: relative;
     height: 100%;
@@ -79,7 +79,28 @@ h2{
     font-family: Liquido Reguar;
     -webkit-text-stroke: 2px #fff;
 }
-
+.github .icon{
+    color: #fff;
+    font-size: 2rem;
+}
+.github{
+    position: fixed;
+    top: 30px;
+    right: 40px;
+    z-index: 11;
+}
+footer{
+    position: fixed;
+    z-index: 1;
+    color: #ddd;
+    font-size: 11.5px;
+    left: 30px;
+    bottom: 20px;
+}
+footer a{
+    text-decoration: none;
+    color: #ddd;
+}
 
 @-webkit-keyframes burble {
     0%   {border-radius: 49% 51% 49% 51% / 26% 27% 73% 74%;}
@@ -96,4 +117,21 @@ h2{
     50%  {border-radius: 76% 24% 66% 34% / 60% 71% 29% 40%;}
     75%  {border-radius:30% 70% 70% 30% / 30% 30% 70% 70% ; }
     100% {border-radius: 49% 51% 49% 51% / 26% 27% 73% 74%;}
+}
+
+
+
+@media(max-width: 1000px){
+    main{
+        width: 90vw;
+        height: 40vh;
+    }
+    main h1{
+        font-size: 90px;
+    }
+    .logo{
+        bottom: 10px;
+        right: 10px;
+        letter-spacing: 3px;
+    }
 }
